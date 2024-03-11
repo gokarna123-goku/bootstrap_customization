@@ -15,7 +15,8 @@ body {
  */
 
 :root {
-  --primary-color: #6c63ff;
+  /* --primary-color: #6c63ff; */
+  --primary-color: #4f46e5;
   --secondary-color: #f5f2fe;
   --tertiary-color: #1c1d25;
 }
