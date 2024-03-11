@@ -96,11 +96,14 @@
                         <!-- 
                             -Tabs Content
                          -->
-                        <div class="tab-content container col-lg-9" id="pills-tabContent">
+                        <div class="tab-content container col-lg-10" id="pills-tabContent">
+                            <!-- 
+                                -Login Page
+                             -->
                             <div class="tab-pane fade show active" id="pills-login" role="tabpanel"
                                 aria-labelledby="pills-login-tab" tabindex="0">
                                 <div
-                                    class="container-fluid bg-white text-primary px-4 py-5 rounded shadow-sm border border-gray">
+                                    class="container-fluid bg-white text-primary p-5 rounded shadow-sm border border-gray">
                                     <h6 class="text-dark fs-5 fw-bold mb-1">
                                         Login Form
                                     </h6>
@@ -114,11 +117,52 @@
                                             <input type="email" class="form-control p-2" id="email"
                                                 aria-describedby="emailHelp"
                                                 placeholder="e.g. gtech.official08@gmail.com">
-                                            <!-- <div id="emailHelp" class="form-text">
-                                                We'll never share your email with anyone
-                                                else.
-                                            </div> -->
                                         </div>
+                                        <div class="mb-3">
+                                            <label for="password"
+                                                class="form-label text-secondary fs-6">Password</label>
+                                            <input type="password" class="form-control p-2" id="password"
+                                                aria-describedby="passwordHelp" placeholder="Enter your password">
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label text-secondary" for="flexCheckDefault">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                            <a href="#" class="text-decoration-none text-primary fs-6">
+                                                Forgot Password?
+                                            </a>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary rounded-pill w-100 mb-4">
+                                            Login
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-secondary fs-6 fw-normal">
+                                            Don't have an account? <a href="#"
+                                                class="text-decoration-none text-primary ms-1">
+                                                Register
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- 
+                                -Register Page
+                             -->
+                            <div class="tab-pane fade" id="pills-register" role="tabpanel"
+                                aria-labelledby="pills-register-tab" tabindex="0">
+                                <div
+                                    class="container-fluid bg-white text-primary p-5 rounded shadow-sm border border-gray">
+                                    <h6 class="text-dark fs-5 fw-bold mb-1">
+                                        Register Form
+                                    </h6>
+                                    <p class="text-secondary fs-6 mb-4">
+                                        Create an free account
+                                    </p>
+                                    <form>
                                         <div class="mb-3">
                                             <label for="email" class="form-label text-secondary fs-6">Email
                                                 address</label>
@@ -126,13 +170,36 @@
                                                 aria-describedby="emailHelp"
                                                 placeholder="e.g. gtech.official08@gmail.com">
                                         </div>
+                                        <div class="mb-3">
+                                            <label for="password"
+                                                class="form-label text-secondary fs-6">Password</label>
+                                            <input type="password" class="form-control p-2" id="password"
+                                                aria-describedby="passwordHelp" placeholder="Enter your password">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="cpassword" class="form-label text-secondary fs-6">Confirm
+                                                Password</label>
+                                            <input type="password" class="form-control p-2" id="cpassword"
+                                                aria-describedby="cpasswordHelp" placeholder="Confirm your password">
+                                        </div>
+                                        <div class="form-check mb-4">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="termConditions">
+                                            <label class="form-check-label text-secondary" for="termConditions">
+                                                Accept terms and conditions
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary rounded-pill w-100 mb-4">
+                                            Create an Account
+                                        </button>
+                                        <div
+                                            class="d-flex align-items-center justify-content-center text-secondary fs-6 fw-normal">
+                                            Already have an account?
+                                            <a href="#" class="text-decoration-none text-primary ms-1">
+                                                Login
+                                            </a>
+                                        </div>
                                     </form>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-register" role="tabpanel"
-                                aria-labelledby="pills-register-tab" tabindex="0">
-                                <div class="container-fluid bg-white text-primary p-2 rounded">
-                                    login page...
                                 </div>
                             </div>
                         </div>
