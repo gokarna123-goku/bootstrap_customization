@@ -5,6 +5,11 @@
   font-family: "poppins", sans-serif;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 /* 
  - Root CSS Variables 
  */
@@ -12,9 +17,89 @@
 :root {
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --tertiary-color: #1c1d25;
 }
 
 /* 
  - Main Styles
  */
+
+/* 
+ -Custom Scrollbar Section Start Here 
+*/
+
+/*   
+ -width 
+*/
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* 
+ -Scrollbar Track 
+*/
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+/* 
+ -Scrollbar Handle 
+*/
+
+::-webkit-scrollbar-thumb {
+  background: #a8a8a8;
+}
+
+/* 
+ -Handle on hover 
+*/
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9a9a;
+}
+
+/* 
+ -Global Button 
+*/
+
+.btn {
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+.btn:active:focus,
+.btn:focus,
+.btn:active {
+  outline: none;
+  border-radius: 20px;
+}
+.bg_btn {
+  width: 200px;
+  background: var(--secondary);
+  border: 2px solid var(--secondary);
+  color: var(--tertiary);
+  border-radius: 20px;
+  transition: 0.68s ease-out;
+}
+.bg_btn:hover {
+  background: transparent;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+}
+.border_btn {
+  width: 200px;
+  background: transparent;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 20px;
+  transition: 0.68s ease-out;
+}
+.border_btn:hover {
+  background: var(--secondary);
+  border: 2px solid var(--secondary);
+  color: var(--tertiary);
+}
