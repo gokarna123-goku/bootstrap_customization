@@ -3,10 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
-}
-
-html,
-body {
   scroll-behavior: smooth;
 }
 
@@ -15,24 +11,42 @@ body {
  */
 
 :root {
-  /* --primary-color: #6c63ff; */
+  --black-color: #2a2a2a;
   --primary-color: #4f46e5;
-  --secondary-color: #4b3f70;
+  --secondary-color: #aeaeae;
   --tertiary-color: #dfdfdf;
 }
 
 /* 
- - Override Bootstrap CSS Variables
- */
+ -Customize pseudo elements
+*/
+::placeholder {
+  color: var(--secondary-color) !important;
+  font-weight: 400;
+}
 
-.primary {
-  color: #0cb9b9;
+/* 
+ - Override Bootstrap CSS Variables
+*/
+.text-black {
+  color: var(--black-color) !important;
 }
-.secondary {
-  color: #dddddd;
+body .text-primary {
+  color: var(--primary-color) !important;
 }
-.tertiary {
-  color: #a6a6a6;
+.text-secondary {
+  color: var(--secondary-color) !important;
+}
+.text-tertiary {
+  color: var(--tertiary-color) !important;
+}
+
+.text-sm {
+  font-size: 0.65rem !important;
+}
+
+.btn-primary {
+  background: var(--primary-color) !important;
 }
 
 /* 
@@ -45,15 +59,18 @@ body {
   border: 1px solid var(--primary--color) !important;
   border-radius: 6px;
 }
+
 .btn:focus,
 .btn:active,
 .btn.active:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 .form-control {
   border: 2px solid var(--tertiary-color) !important;
 }
+
 .form-control:focus,
 .form-control:active,
 .form-control.active:focus {
@@ -61,12 +78,7 @@ body {
   box-shadow: none !important;
   border: 2px solid var(--primary-color) !important;
 }
-/* .form-control {
-  border-radius: 0px !important;
-}
-.form-check-input[type="checkbox"] {
-  border-radius: 0px !important;
-} */
+
 .form-check-input:focus,
 .form-check-input:active,
 .form-check-input.active:focus {
@@ -103,7 +115,7 @@ body {
 */
 
 /*   
- -width 
+ -width of the scrollbar
 */
 
 ::-webkit-scrollbar {
@@ -111,7 +123,7 @@ body {
 }
 
 /* 
- -Scrollbar Track 
+ -Scrollbar Track of the scrollbar
 */
 
 ::-webkit-scrollbar-track {
@@ -119,7 +131,7 @@ body {
 }
 
 /* 
- -Scrollbar Handle 
+ -Scrollbar Handle of the scrollbar
 */
 
 ::-webkit-scrollbar-thumb {
@@ -127,53 +139,9 @@ body {
 }
 
 /* 
- -Handle on hover 
+ -Handle on hover of the scrollbar
 */
 
 ::-webkit-scrollbar-thumb:hover {
   background: #9a9a9a;
 }
-
-/* 
- -Global Button 
-*/
-
-.btn {
-  height: 40px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-}
-/* .btn:active:focus,
-.btn:focus,
-.btn:active {
-  outline: none;
-  border-radius: 20px;
-} */
-/* .bg_btn {
-  width: 200px;
-  background: var(--secondary);
-  border: 2px solid var(--secondary);
-  color: var(--tertiary);
-  border-radius: 20px;
-  transition: 0.68s ease-out;
-}
-.bg_btn:hover {
-  background: transparent;
-  border: 2px solid var(--secondary);
-  color: var(--secondary);
-}
-.border_btn {
-  width: 200px;
-  background: transparent;
-  border: 2px solid var(--secondary);
-  color: var(--secondary);
-  border-radius: 20px;
-  transition: 0.68s ease-out;
-}
-.border_btn:hover {
-  background: var(--secondary);
-  border: 2px solid var(--secondary);
-  color: var(--tertiary);
-} */
