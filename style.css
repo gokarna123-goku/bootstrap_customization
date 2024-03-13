@@ -17,13 +17,86 @@ body {
 :root {
   /* --primary-color: #6c63ff; */
   --primary-color: #4f46e5;
-  --secondary-color: #f5f2fe;
-  --tertiary-color: #1c1d25;
+  --secondary-color: #4b3f70;
+  --tertiary-color: #dfdfdf;
 }
 
 /* 
- - Main Styles
+ - Override Bootstrap CSS Variables
  */
+
+.primary {
+  color: #0cb9b9;
+}
+.secondary {
+  color: #dddddd;
+}
+.tertiary {
+  color: #a6a6a6;
+}
+
+/* 
+ -Removing outline on focus 
+*/
+.btn {
+  font-size: 1.03rem;
+  padding: 0.45rem 0;
+  outline: none;
+  border: 1px solid var(--primary--color) !important;
+  border-radius: 6px;
+}
+.btn:focus,
+.btn:active,
+.btn.active:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control {
+  border: 2px solid var(--tertiary-color) !important;
+}
+.form-control:focus,
+.form-control:active,
+.form-control.active:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: 2px solid var(--primary-color) !important;
+}
+/* .form-control {
+  border-radius: 0px !important;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 0px !important;
+} */
+.form-check-input:focus,
+.form-check-input:active,
+.form-check-input.active:focus {
+  outline: none;
+  box-shadow: none !important;
+  border: 2px solid var(--primary-color) !important;
+}
+
+/* 
+ -Customize Bootstrap NavPills (Tabs) 
+*/
+
+.nav-pills {
+  border: 2px solid var(--primary-color);
+}
+.nav-pills .nav-link {
+  border-radius: 30px !important;
+  width: auto;
+  color: var(--primary-color);
+  background: transparent;
+}
+.nav-pills .nav-link:hover {
+  color: var(--primary-color);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--secondary-color);
+  background: var(--primary-color) !important;
+  border-bottom: none;
+}
 
 /* 
  -Custom Scrollbar Section Start Here 
@@ -65,13 +138,13 @@ body {
  -Global Button 
 */
 
-/* .btn {
+.btn {
   height: 40px;
   font-size: 1.2rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   cursor: pointer;
-} */
+}
 /* .btn:active:focus,
 .btn:focus,
 .btn:active {
