@@ -7,8 +7,12 @@
 }
 
 /* 
+ - =====================================X=====================================
+*/
+
+/* 
  - Root CSS Variables 
- */
+*/
 
 :root {
   --black-color: #2a2a2a;
@@ -18,12 +22,20 @@
 }
 
 /* 
+ - =====================================X=====================================
+*/
+
+/* 
  -Customize pseudo elements
 */
 ::placeholder {
   color: var(--secondary-color) !important;
   font-weight: 400;
 }
+
+/* 
+ - =====================================X=====================================
+*/
 
 /* 
  - Override Bootstrap CSS Variables
@@ -50,11 +62,15 @@ body .text-primary {
 }
 
 /* 
+ - =====================================X=====================================
+*/
+
+/* 
  -Removing outline on focus 
 */
 .btn {
   font-size: 1.03rem;
-  padding: 0.45rem 0;
+  padding: 0.55rem 0 !important;
   outline: none;
   border: 1px solid var(--primary--color) !important;
   border-radius: 6px;
@@ -88,6 +104,10 @@ body .text-primary {
 }
 
 /* 
+ - =====================================X=====================================
+*/
+
+/* 
  -Customize Bootstrap NavPills (Tabs) 
 */
 
@@ -109,6 +129,10 @@ body .text-primary {
   background: var(--primary-color) !important;
   border-bottom: none;
 }
+
+/* 
+ - =====================================X=====================================
+*/
 
 /* 
  -Custom Scrollbar Section Start Here 
